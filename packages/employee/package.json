@@ -1,0 +1,31 @@
+{
+  "name": "@mfs/employee",
+  "version": "0.0.0",
+  "description": "Displays a table with employees",
+  "author": "priyankag048 <priyankaguha.2012@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "directories": {
+    "lib": "src"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "seed": "node bin/seed.js",
+    "start": "node src/server/app.js",
+    "build": "npm run build:rm && next build",
+    "build:rm": "rm -rf .next"
+  },
+  "dependencies": {
+    "axios": "0.19.2",
+    "express": "4.17.1",
+    "mongodb": "3.5.5",
+    "next": "9.3.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  }
+}
