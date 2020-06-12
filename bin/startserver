@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+echo "nginx server listening to http://localhost:4000"
+nginxConfPath="$PWD/webservers/nginx.conf"
+nginx -c $nginxConfPath
