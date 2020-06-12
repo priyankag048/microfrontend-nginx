@@ -1,0 +1,34 @@
+{
+  "name": "microfrontend-nginx",
+  "version": "1.0.0",
+  "description": "Implementation of micro-frontend with nginx",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "cleanup": "./bin/cleanup",
+    "preinstall": "lerna link convert",
+    "seed": "lerna run seed",
+    "build": "lerna run build",
+    "startServices": "lerna run start",
+    "startWebServer": "./bin/startserver"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priyankag048/microfrontend-nginx.git"
+  },
+  "keywords": [],
+  "author": "priyankag048<priyankaguha.2012@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/priyankag048/microfrontend-nginx/issues"
+  },
+  "homepage": "https://github.com/priyankag048/microfrontend-nginx#readme",
+  "devDependencies": {
+    "lerna": "3.22.0"
+  },
+  "dependencies": {
+    "@mfs/dashboard": "file:packages/dashboard",
+    "@mfs/department": "file:packages/department",
+    "@mfs/employee": "file:packages/employee"
+  }
+}
