@@ -23,8 +23,11 @@ Start mongoDB and nginx before proceding to next steps.
 5. npm startServices ( start employee, department and dashboard services )
 
     Employee service will start on http://localhost:4001/
+
     Department service will start on http://localhost:4002/
+
     Dashboard service will start on http://localhost:4003/
 
 6. npm run startWebServer
+
     The nginx server will start on http://localhost:4000/
